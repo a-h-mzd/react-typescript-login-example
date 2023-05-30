@@ -21,7 +21,7 @@ jobs:
         env:
           FORCE_COLOR: 0
         with:
-          node-version-file: .nvmrc
+          node-version: 18
           cache: npm
           working-directory: ./
       - name: Install dependencies
