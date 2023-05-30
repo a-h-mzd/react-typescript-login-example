@@ -32,10 +32,10 @@ jobs:
         run: echo "NEXT_PUBLIC_API_MOCKING=enabled" >> $GITHUB_ENV
       - name: Build app
         run: NEXT_PUBLIC_API_MOCKING=enabled npm run build
-        working-directory: apps/user
+        # working-directory: apps/user
       - name: Start app
         run: NEXT_PUBLIC_API_MOCKING=enabled npm run start &
-        working-directory: apps/user
+        # working-directory: apps/user
       - name: Run e2e tests
         uses: cypress-io/github-action@v4
         # with:
